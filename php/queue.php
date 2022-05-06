@@ -82,11 +82,19 @@ $myQueue->deQueue();
 $myQueue->frontElement();
 $myQueue->rearElement();
 $myQueue->size();
-$myQueue->isEmpty();
+if ($myQueue->isEmpty()) {
+    echo "The queue is empty. \n";
+} else {
+    echo "The queue is not empty. \n";
+}
 
 $myQueue->deQueue();
 $myQueue->frontElement();
 $myQueue->rearElement();
 $myQueue->size();
-$myQueue->isEmpty();
+if ($myQueue->isEmpty()) {
+    echo "The queue is empty. \n";
+} else {
+    echo "The queue is not empty. \n";
+}
 ?>
