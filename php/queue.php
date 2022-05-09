@@ -19,6 +19,7 @@ class Queue {
     }
 
     function size() {
+        // if size is empty, return 0
         $size = $this->rear - $this->front;
         echo "The size of the queue is " . $size . " elements. \n";
     }
