@@ -23,3 +23,6 @@ Naive implementation of a singleton in Python that makes use of metaclasses. Thi
 
 ### Factory method
 Basic implementation of the factory method in Python. The user is prompted at runtime to decide which object they want to instantiate. The responsibility of instantiating a concrete class (`Student` or `Teacher`) is delegated to the `PersonFactory` class. `Teacher` and `Student` both implement the `IPerson` interface, which ensures that each of them implement the `person_method()`.
+
+### Observer
+Implementation of the observer pattern using `Subject` and `Object` interfaces and concrete subclasses for each of these interfaces. Observers can be added, removed and notified, and they update themselves when they are notified of a state change in the subject they are observing.
