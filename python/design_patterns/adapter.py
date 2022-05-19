@@ -3,37 +3,37 @@ from abc import ABC, abstractmethod
 # The Duck interface ensures that subclasses implement its methods
 class Duck(ABC):
     @abstractmethod
-    def quack():
+    def quack(self):
         pass
 
     @abstractmethod
-    def fly():
+    def fly(self):
         pass
 
 # The ConcreteDuck class implements the methods defined in the Duck interface
 class ConcreteDuck(Duck):
-    def quack():
+    def quack(self):
         print("Quack")
 
-    def fly():
+    def fly(self):
         print("I'm flying")
 
 # The Turkey interface enforces different methods on its subclasses than the Duck class
 class Turkey(ABC):
     @abstractmethod
-    def gobble():
+    def gobble(self):
         pass
 
     @abstractmethod
-    def fly():
+    def fly(self):
         pass
 
 # The ConcreteTurkey class implements the methods defined in the Turkey interface
 class ConcreteTurkey(Turkey):
-    def gobble():
+    def gobble(self):
         print("Gobble gobble")
 
-    def fly():
+    def fly(self):
         print("I'm flying a short distance")
 
 # ADAPTER
@@ -47,12 +47,6 @@ class ConcreteTurkey(Turkey):
 # We are adapting (FROM) a turkey to a Duck
 
 class TurkeyAdapter(Duck):
-
-    # ERROR IS HERE, IN THE NEXT FEW LINES
-    # Should this be instantiated here? What should be passed to the constructor? See the errors
-    
-    turkey = Turkey()
-
     # Next, we need a reference to the object that we're adapting - we do that through the constructor
     def __init__(self, turkey):
         self.turkey = turkey
@@ -82,8 +76,8 @@ turkey_adapter = TurkeyAdapter(wild_turkey)
 
 # Test the turkey by calling its gobble and fly methods
 print("Wild turkey says: ")
-turkey_adapter.gobble()
-turkey_adapter.fly()
+wild_turkey.gobble()
+wild_turkey.fly()
 
 # Test the duck by passing the duck object to the testDuck() method above
 print("The duck says: ")
