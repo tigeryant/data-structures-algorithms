@@ -18,7 +18,7 @@ class Stack:
         size = self.top + 1
         print(f'The size of the stack is {size} elements.')
 
-    def topElement(self):
+    def top_element(self):
         if self.is_empty():
             print('There is no top element in the stack.')
         else:
@@ -41,16 +41,16 @@ class Stack:
 myStack = Stack()
 
 myStack.size()
-myStack.topElement()
+myStack.top_element()
 
 myStack.push(10)
 myStack.push(20)
 myStack.push(30)
 
 myStack.size()
-myStack.topElement()
+myStack.top_element()
 
 myStack.pop()
 myStack.size()
-myStack.topElement()
+myStack.top_element()
     
