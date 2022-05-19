@@ -29,3 +29,6 @@ The observer defines a one-to-many dependency between objects so that when one o
 
 ### Adapter
 The adapter design pattern converts the interface of a class into another interface clients expect. It let's classes work together that couldn't otherwise because of incompatible interfaces. In the example, a `TurkeyAdapter` adapts a `Turkey` interface into a `Duck` interface.
+
+### Facade
+The facade pattern provides a uniﬁed interface to a set of interfaces in a subsytem. Facade deﬁnes a higher-level interface that makes the subsystem easier to use. The example implements a 'home theater' subsystem, and a `HomeTheaterFacade` as the interface to this subsystem. The client interacts with the facade, which is simpler than interacting with the objects in the subsystem individually.
