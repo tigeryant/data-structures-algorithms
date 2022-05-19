@@ -9,10 +9,11 @@ Insertion sort is a simple sorting algorithm that builds the final sorted array 
 
 ### Stack
 * Stack data structure implemented in PHP - functions include: `isEmpty()`, `size()`, `topElement()`, `push()` and `pop()`.
-* Stack data structure implemented in Python - functions include: `isEmpty()`, `size()`, `topElement()`, `push()` and `pop()`.
+* Stack data structure implemented in Python - functions include: `is_empty()`, `size()`, `top_element()`, `push()` and `pop()`.
 
 ### Queue
-Queue data structure implemented in PHP - functions include: `isEmpty()`, `size()`, `frontElement()`, `rearElement()`, `enQueue()` and `deQueue()`.
+* Queue data structure implemented in PHP - functions include: `isEmpty()`, `size()`, `frontElement()`, `rearElement()`, `enQueue()` and `deQueue()`.
+* Queue data structure implemented in Python - functions include: `is_empty()`, `size()`, `front_element()`, `rear_element`, `enqueue()` and `dequeue()`.
 
 </br>
 
