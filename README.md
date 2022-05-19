@@ -19,10 +19,13 @@ Queue data structure implemented in PHP - functions include: `isEmpty()`, `size(
 ## Design patterns
 
 ### Singleton
-Naive implementation of a singleton in Python that makes use of metaclasses. This is a naive implementation because it does not behave correctly in a multi-threaded environment - that is, multiple threads can call the creation method simultaneously and get several instances of Singleton class.
+The singleton ensures a class has only one instance, and provides a global point of access to it. The example is a naive implementation of a singleton in Python that makes use of metaclasses. It is naive because it does not behave correctly in a multi-threaded environment - that is, multiple threads can call the creation method simultaneously and get several instances of Singleton class.
 
 ### Factory method
-Basic implementation of the factory method in Python. The user is prompted at runtime to decide which object they want to instantiate. The responsibility of instantiating a concrete class (`Student` or `Teacher`) is delegated to the `PersonFactory` class. `Teacher` and `Student` both implement the `IPerson` interface, which ensures that each of them implement the `person_method()`.
+The factory method defines an interface for creating an object, but lets subclasses decide which class to instantiate. It lets a class defer instantiation to subclasses. The example shows a basic implementation of the factory method in Python. The user is prompted at runtime to decide which object they want to instantiate. The responsibility of instantiating a concrete class (`Student` or `Teacher`) is delegated to the `PersonFactory` class. `Teacher` and `Student` both implement the `IPerson` interface, which ensures that each of them implement the `person_method()`.
 
 ### Observer
-Implementation of the observer pattern using `Subject` and `Object` interfaces and concrete subclasses for each of these interfaces. Observers can be added, removed and notified, and they update themselves when they are notified of a state change in the subject they are observing.
+The observer defines a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically. The example is an implementation of the observer pattern using `Subject` and `Object` interfaces and concrete subclasses for each of these interfaces. Observers can be added, removed and notified, and they update themselves when they are notified of a state change in the subject they are observing.
+
+### Adapter
+The adapter design pattern converts the interface of a class into another interface clients expect. It let's classes work together that couldn't otherwise because of incompatible interfaces. In the example, a `TurkeyAdapter` adapts a `Turkey` interface into a `Duck` interface.
