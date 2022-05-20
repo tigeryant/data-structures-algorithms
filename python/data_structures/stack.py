@@ -1,6 +1,3 @@
-from contextlib import nullcontext
-
-
 class Stack:
     def __init__(self):
         self.top = -1
