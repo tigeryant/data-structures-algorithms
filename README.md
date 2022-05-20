@@ -3,6 +3,9 @@
 ### Insertion sort
 Insertion sort is a simple sorting algorithm that builds the final sorted array one item at a time. This algorithm runs in quadratic time, and can be used when n is low (where n is the number of items to be sorted). Analogous to sorting a card deck with both hands.
 
+### Breadth first search
+...
+
 </br>
 
 ## Data structures
