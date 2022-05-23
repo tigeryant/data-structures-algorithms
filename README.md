@@ -6,6 +6,12 @@ Insertion sort is a simple sorting algorithm that builds the final sorted array 
 ### Bubble sort
 Bubble sort is a sorting algorithm that compares two adjacent elements and swaps them until they are in the intended order. It has a time complexity of O(n^2).
 
+### Linear search
+...
+
+### Binary search
+...
+
 ### Breadth first search
 ...
 
