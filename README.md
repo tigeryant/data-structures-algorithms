@@ -1,7 +1,10 @@
 ## Algorithms
 
 ### Insertion sort
-Insertion sort is a simple sorting algorithm that builds the final sorted array one item at a time. This algorithm runs in quadratic time, and can be used when n is low (where n is the number of items to be sorted). Analogous to sorting a card deck with both hands.
+Insertion sort is a simple sorting algorithm that builds the final sorted array one item at a time. This algorithm runs in quadratic time, and can be used when n is low (where n is the number of items to be sorted). Insertion sort is analogous to sorting a card deck with both hands.
+
+### Bubble sort
+Bubble sort is a sorting algorithm that compares two adjacent elements and swaps them until they are in the intended order. It has a time complexity of O(n^2).
 
 ### Breadth first search
 ...
