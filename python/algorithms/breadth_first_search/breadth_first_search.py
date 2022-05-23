@@ -4,9 +4,11 @@ from vertex import Vertex
 
 # initialise variables
 
+frontier = Queue()
+
 vertex_names = ["r", "s", "t", "u", "v", "w", "x", "y"]
 vertices = []
-frontier = Queue()
+
 adjacency_list_names = [
     ["s", "v"],
     ["r", "w"],
@@ -47,10 +49,12 @@ for row in adjacency_list_names:
 # breadth first search until the 'frontier' list (undiscovered vertices) becomes empty
 while frontier.is_empty() != True:
     current = frontier.dequeue()
+    print(f"The current vertex is: {current.name}")
 
     # discover vertices adjacent to the current vertex
     for vertex in adjacency_list[current.index]:
         if vertex.colour == "white":
+            print(f"Discovered vertex {vertex.name}")
             vertex.colour = "grey"
             vertex.distance = current.distance + 1
             vertex.parent = current
